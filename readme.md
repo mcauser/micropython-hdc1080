@@ -76,7 +76,7 @@ hdc.reset()
 
 # look for the HDC1080 sensor on the I2C bus
 hdc.check()
-# returns True if the device was found
+# returns True if the device was found, otherwise raises an OSError
 
 hdc.battery_status()
 # returns 0 if Vcc > 2.8V
@@ -93,6 +93,14 @@ hdc.manufacturer_id()
 hdc.device_id()
 # returns 4176 or 0x1050
 # don't ask me why it's 1050 and not 1080 - that's just how it is in the datasheet
+```
+
+For more detailed examples, see [examples](/examples).
+
+If you mip installed them above, you can run them like so:
+
+```python
+import hdc1080.examples.basic
 ```
 
 ## Parts
