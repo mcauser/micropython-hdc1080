@@ -31,12 +31,12 @@ Copy `src/hdc1080.py` to the root directory of your device.
 
 ```python
 from machine import I2C, Pin
-i2c = I2C(0)
+from hdc1080 import HDC1080
 
+i2c = I2C(0)
 i2c.scan()
 # [64]
 
-from hdc1080 import HDC1080
 hdc = HDC1080(i2c)
 
 # set humidity resolution (in bits)

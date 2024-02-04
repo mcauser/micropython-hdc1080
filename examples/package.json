@@ -3,5 +3,5 @@
     ["hdc1080/examples/basic.py", "github:mcauser/micropython-hdc1080/examples/hdc1080_basic.py"]
   ],
   "deps": [],
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
